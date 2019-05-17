@@ -55,7 +55,7 @@ textarea,
 	-webkit-appearance:none; /* Safari and Chrome */
   -webkit-border-radius:0;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   font-family: $primary-font;
   background-color: $gray;
   @include transition(background-color 0.24s ease-in-out);

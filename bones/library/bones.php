@@ -128,7 +128,7 @@ function bones_scripts_and_styles() {
   	wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
   	// register main stylesheet
-  	$stylesheetURL =  '/library/css/style.min.css';
+  	$stylesheetURL =  '/library/css-output/style.css';
   	wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . $stylesheetURL, array(), date("dmY-his", filemtime (get_stylesheet_directory() . $stylesheetURL)), 'all' );
 
       // comment reply script for threaded comments
@@ -140,19 +140,14 @@ function bones_scripts_and_styles() {
   	$scriptsURL =  '/library/js/scripts.min.js';
       wp_register_script( 'bones-js', get_stylesheet_directory_uri() . $scriptsURL, array( 'jquery' ), date("dmY-his", filemtime (get_stylesheet_directory() . $scriptsURL)), true );
 
-      $responsiveURL =  '/library/js/responsive.min.js';
-      wp_register_script( 'responsive-js', get_stylesheet_directory_uri() . $responsiveURL , array( 'jquery' ), date("dmY-his", filemtime (get_stylesheet_directory() . $responsiveURL)), true );
-
-      wp_enqueue_script( 'shorten-js', get_stylesheet_directory_uri() . '/library/js/shorten.min.js', array( 'jquery' ), '', true );
-
   	wp_enqueue_style( 'font-awesome-stylesheet', get_stylesheet_directory_uri() . '/library/css/fonts/font-awesome/css/font-awesome.min.css', array(), '', 'all' );
       wp_enqueue_style( 'font-awesome-five', '//use.fontawesome.com/releases/v5.5.0/css/all.css', array(), '', 'all' );
 
 
-      if(is_front_page()):
-          wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '', true );
-          wp_enqueue_style( 'slick-css', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', array(), '', 'all' );
-      endif;
+      // if(is_front_page()):
+      //     wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '', true );
+      //     wp_enqueue_style( 'slick-css', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', array(), '', 'all' );
+      // endif;
   		// enqueue styles and scripts
   		wp_enqueue_script( 'bones-modernizr' );
   		wp_enqueue_style( 'bones-stylesheet' );

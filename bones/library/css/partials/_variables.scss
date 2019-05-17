@@ -26,18 +26,19 @@ $alert-blue:        #d5edf8; //bones default
 $black:             #000; //bones default
 $white:             #fff; //bones default
 
-$primary-color:			#86a33d; //bones default
-$secondary-color:		#339b9b; //bones default
+$primary-color:			#6699FF; //bones default
+$secondary-color:		#4C74C2; //bones default
+$tertiary-color:		#0A1A2A; //bones default
 
-$gray:              #eaedf2; //bones default
+$gray:              #B9B9B9; //bones default
 $text-color:        $gray; //bones default
-$light-gray:        $gray; //bones default
+$light-gray:        #F2F4F6; //bones default
 $meta-gray:         $gray; //bones default
 
 $link-color:        $secondary-color; //bones default
 $link-hover:        darken($link-color, 9%);//bones default
 
-$border-color:      #e1e1e1;//bones default
+$border-color:      #F2F4F6;//bones default
 $disabled-gray:     $border-color;//bones default
 
 

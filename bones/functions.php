@@ -198,7 +198,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Fjalla+One|PT+Sans:400,700,400italic,700italic');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
@@ -206,7 +206,7 @@ add_action('wp_enqueue_scripts', 'bones_fonts');
 // LOAD IN ADDITIONAL QD FUNCTIONALITY
 require_once( 'library/qd-functions.php' );
 
-// LOAD IN WOOCOMMERCE FUNCTIONS 
+// LOAD IN WOOCOMMERCE FUNCTIONS
 //require_once( 'library/qd-woocommerce.php' );
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
