@@ -1,0 +1,48 @@
+// main: ../style.scss
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$alert-yellow:      #ebe16f; //bones default
+$alert-red:         #fbe3e4; //bones default
+$alert-green:       #e6efc2; //bones default
+$alert-blue:        #d5edf8; //bones default
+
+$black:             #000; //bones default
+$white:             #fff; //bones default
+
+$primary-color:			#86a33d; //bones default
+$secondary-color:		#339b9b; //bones default
+
+$gray:              #eaedf2; //bones default
+$text-color:        $gray; //bones default
+$light-gray:        $gray; //bones default
+$meta-gray:         $gray; //bones default
+
+$link-color:        $secondary-color; //bones default
+$link-hover:        darken($link-color, 9%);//bones default
+
+$border-color:      #e1e1e1;//bones default
+$disabled-gray:     $border-color;//bones default
+
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/

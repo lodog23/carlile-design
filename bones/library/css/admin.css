@@ -1,0 +1,67 @@
+﻿@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+#adminmenu #menu-posts-widget.menu-icon-post div.wp-menu-image:before {
+  font-family: 'icomoon' !important;
+  content: '\e658';
+}
+
+#adminmenu #menu-posts-listing.menu-icon-post div.wp-menu-image:before {
+  font-family: 'icomoon' !important;
+  content: '\e6b4';
+}
+
+/* THIS SET OF CSS WAS USED FOR A MODAL POPUP WITHIN AARDVARK */
+#loadingPanel
+{
+  display:none;  
+}
+#loadingPanel #loadingPanelBG
+{
+  z-index: 100;
+  width: 4000px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#loadingPanel #loadingPanelDiv
+{
+  width: 240px;
+  height: 70px;
+  position: fixed;
+  background-color: #fff;
+  background-image: url("../images/admin/loader.gif");
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 50%;
+  border: 1px solid #377c93;
+  background-position: center 48px;
+  text-align: center;
+  padding-top: 9px;
+  margin-right: -120px;
+  z-index: 150;
+}
